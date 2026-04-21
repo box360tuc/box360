@@ -26,7 +26,7 @@
 
         .container { max-width: 1000px; margin: auto; padding: 20px; }
 
-        /* Reproductor - SIN TOCAR FUNCIONALIDAD */
+        /* Reproductor - SIN CAMBIOS */
         .reproductor-container {
             position: relative;
             padding-bottom: 56.25%;
@@ -47,7 +47,6 @@
         }
 
         /* Grilla de Programación */
-        .programacion { margin-top: 40px; }
         .grid-prog {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -61,7 +60,6 @@
             border-radius: 4px;
         }
         .card-prog h3 { margin: 10px 0; color: var(--rojo-box); }
-        .dia { font-size: 0.8rem; text-transform: uppercase; color: #888; }
 
         /* Botón YouTube */
         .btn-youtube {
@@ -72,16 +70,21 @@
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            margin-top: 30px;
+            margin: 30px 0;
             transition: transform 0.3s;
         }
-        .btn-youtube:hover { transform: scale(1.05); background-color: #ff4d5a; }
+        .btn-youtube:hover { transform: scale(1.05); }
 
         footer { background: #0a0a0a; padding: 40px 20px; text-align: center; margin-top: 60px; }
-        .mapa-container { margin-top: 20px; border-radius: 8px; overflow: hidden; max-width: 600px; margin-left: auto; margin-right: auto; border: 2px solid #333; }
+        .redes a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        .redes a:hover { color: var(--rojo-box); }
         
-        @media (max-width: 600px) {
-            .logo-texto { font-size: 2rem; }
+        .mapa-container { 
+            margin: 25px auto; 
+            border-radius: 8px; 
+            overflow: hidden; 
+            max-width: 600px; 
+            border: 2px solid #333; 
         }
     </style>
 </head>
@@ -102,22 +105,22 @@
         <h2 style="text-align: center;">Nuestra Programación</h2>
         <div class="grid-prog">
             <div class="card-prog">
-                <span class="dia">Lunes a Viernes 10:00hs</span>
+                <span style="color:#888; font-size: 0.8rem;">Lunes a Viernes 10:00hs</span>
                 <h3>La Mañana de la 360</h3>
                 <p>Toda la actualidad local de Tafí Viejo analizada al instante.</p>
             </div>
             <div class="card-prog">
-                <span class="dia">Lunes 21:00hs</span>
+                <span style="color:#888; font-size: 0.8rem;">Lunes 21:00hs</span>
                 <h3>Cesto al Palo</h3>
                 <p>Información del Cestoball local y nacional.</p>
             </div>
             <div class="card-prog">
-                <span class="dia">Martes 19:00hs</span>
+                <span style="color:#888; font-size: 0.8rem;">Martes 19:00hs</span>
                 <h3>Sentimientos de Papel</h3>
                 <p>La movida cultural de Tafí Viejo y todo Tucumán.</p>
             </div>
             <div class="card-prog">
-                <span class="dia">Viernes 21:00hs</span>
+                <span style="color:#888; font-size: 0.8rem;">Viernes 21:00hs</span>
                 <h3>Con Voz Propia</h3>
                 <p>Magazine, entrevistas en vivo y resumen semanal.</p>
             </div>
@@ -129,22 +132,29 @@
             </a>
         </div>
     </section>
-
 </div>
 
 <footer id="contacto">
     <h2 class="logo-texto" style="font-size: 1.5rem;">BOX<span>360</span>TUC</h2>
+    
     <div class="contact-info">
         <p><strong>Estudios:</strong> Balcarce 286 Altos, Tafí Viejo, Tucumán</p>
-        <p>Publicidad: +54 381 XXX-XXXX</p>
+        <p><strong>WhatsApp:</strong> +54 381 573-0761</p>
+    </div>
+
+    <div class="redes">
+        <a href="https://www.facebook.com/box360tuc" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/box360tuc" target="_blank">Instagram</a>
     </div>
 
     <div class="mapa-container">
         <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.468202476569!2d-65.2618!3d-26.7291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9422687f87f2e54f%3A0x633d9692994f71a7!2sBalcarce%20286%2C%20Taf%C3%AD%20Viejo%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1710000000000!5m2!1ses!2sar" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.210452378345!2d-65.2631588!3d-26.737666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942267d5069a842f%3A0xc33190a43034293c!2sBalcarce%20286%2C%20Taf%C3%AD%20Viejo%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1710000000000!5m2!1ses!2sar" 
             width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
         </iframe>
     </div>
+    
+    <p style="font-size: 0.8rem; color: #555; margin-top: 20px;">© 2026 BOX360TUC - Multimedia Producciones</p>
 </footer>
 
 </body>
