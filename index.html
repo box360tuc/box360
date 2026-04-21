@@ -31,7 +31,7 @@
         }
         .logo-texto span { color: var(--rojo-box); }
 
-        /* DISEÑO PARA PUBLICIDAD LATERAL */
+        /* AJUSTE PARA PUBLICIDAD LATERAL */
         .main-layout { display: flex; max-width: 1400px; margin: auto; padding: 20px; gap: 20px; align-items: flex-start; }
         .container { flex: 1; min-width: 0; }
 
@@ -40,9 +40,6 @@
         .ad-box img { max-width: 100%; height: auto; border-radius: 5px; }
         .ad-label { font-size: 0.7rem; color: #666; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
 
-        /* REPRODUCTOR DE AUDIO */
-        .audio-player { background: #222; padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 20px; border: 1px solid var(--rojo-box); }
-        
         .main-stream { margin-top: -50px; background: #000; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
         .video-container { position: relative; padding-bottom: 56.25%; height: 0; }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
@@ -54,7 +51,7 @@
         .card-prog h3 { margin: 10px 0; color: var(--rojo-box); }
         .card-prog .dia { font-size: 0.8rem; text-transform: uppercase; opacity: 0.7; font-weight: bold; }
 
-        /* BOTÓN YOUTUBE */
+        /* BOTÓN YOUTUBE PARA GRABACIONES */
         .btn-youtube-archivo { 
             display: inline-block; 
             background: #ff0000; 
@@ -103,14 +100,6 @@
 
     <div class="container">
         
-        <div class="audio-player">
-            <p style="margin: 0 0 10px 0; font-size: 0.9rem; color: var(--rojo-box); font-weight: bold;">📻 ESCUCHÁ LA RADIO EN VIVO</p>
-            <audio controls style="width: 100%;">
-                <source src="https://nd106.republicaservers.com:7775/;" type="audio/mpeg">
-                Tu navegador no soporta el reproductor de audio.
-            </audio>
-        </div>
-
         <section id="vivo" class="main-stream">
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/live_stream?channel=UC8C4w_7pXlD9G9kGfXfW0Xw" allowfullscreen></iframe>
@@ -159,8 +148,8 @@
     <aside class="sidebar-ads">
         <div class="ad-box">
             <p class="ad-label">Publicidad</p>
-            <div style="height: 100px; border: 1px dashed #444; display: flex; align-items: center; justify-content: center; color: #555; font-size: 0.8rem;">
-                Disponible
+            <div style="height: 120px; border: 1px dashed #444; display: flex; align-items: center; justify-content: center; color: #555; font-size: 0.8rem;">
+                Espacio Disponible
             </div>
         </div>
     </aside>
