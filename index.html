@@ -143,6 +143,40 @@
     <p>Balcarce 286 Altos, Tafí Viejo, Tucumán</p>
     <a href="https://wa.me/543813338325" class="btn-accion btn-wsp">CONTACTO COMERCIAL</a>
 </footer>
+<style>
+    .banner-flotante {
+        position: fixed;
+        top: 150px;
+        width: 160px;
+        z-index: 999;
+    }
+    .izquierdo { left: 10px; }
+    .derecho { right: 10px; }
+    .banner-flotante video, .banner-flotante img {
+        width: 100%;
+        border-radius: 8px;
+        border: 2px solid #a4ff00;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+    /* En celulares se ocultan para no tapar el contenido */
+    @media (max-width: 1400px) {
+        .banner-flotante { display: none; }
+    }
+</style>
 
+<aside class="banner-flotante izquierdo">
+    <video autoplay loop muted playsinline>
+        <source src="sama.mp4" type="video/mp4">
+    </video>
+    <img src="flayer-box.jpg" alt="Publicidad">
+</aside>
+
+<aside class="banner-flotante derecho">
+    <img src="logo-relax.png" alt="Relax">
+    <div style="background:#1a1a1a; border:1px dashed #444; height:150px; display:flex; align-items:center; justify-content:center; border-radius:8px;">
+        <small style="color:#555">ESPACIO DISPONIBLE</small>
+    </div>
+</aside>
 </body>
 </html>
